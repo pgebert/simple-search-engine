@@ -53,6 +53,8 @@ subprojects {
 
     mainClassName = 'search.MainKt'
 
+    run { standardInput = System.in }
+
     test {
         systemProperty "file.encoding", "utf-8"
         outputs.upToDateWhen { false }
@@ -80,3 +82,4 @@ configure(subprojects.findAll { it.name != 'util' }) {
 wrapper {
     gradleVersion = hs.gradle.version
 }
+
