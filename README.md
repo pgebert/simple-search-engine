@@ -1,6 +1,6 @@
 # simple-search-engine
 
-<img src="https://user-images.githubusercontent.com/6838540/166009533-d66123c7-022f-4803-ad7e-2d1592cc4059.png" width="100%">
+<img src="https://user-images.githubusercontent.com/6838540/166009533-d66123c7-022f-4803-ad7e-2d1592cc4059.png" width="100%" style="box-sizing: content-box;">
 
 
 ### Getting started !
