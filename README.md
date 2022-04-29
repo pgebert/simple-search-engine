@@ -1,9 +1,10 @@
 # simple-search-engine
 
-<img src="https://user-images.githubusercontent.com/6838540/165939191-82153509-c2a4-4b7a-9fda-5bf5f52b806c.png" width="100%">
+<img src="https://user-images.githubusercontent.com/6838540/166009533-d66123c7-022f-4803-ad7e-2d1592cc4059.png" width="100%">
 
 
-### Getting started 
+### Getting started !
+
 
 
 ```
