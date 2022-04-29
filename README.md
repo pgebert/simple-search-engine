@@ -1,6 +1,6 @@
 # simple-search-engine
 
-<img src="https://user-images.githubusercontent.com/6838540/166009533-d66123c7-022f-4803-ad7e-2d1592cc4059.png" width="100%" style="box-sizing: unset!important;">
+<img src="https://user-images.githubusercontent.com/6838540/166009533-d66123c7-022f-4803-ad7e-2d1592cc4059.png" width="200px" >
 
 ![166009533-d66123c7-022f-4803-ad7e-2d1592cc4059](https://user-images.githubusercontent.com/6838540/166061952-b0ff0934-8e99-4d4c-bd5a-1909e5c6c4ce.jpg)
 
