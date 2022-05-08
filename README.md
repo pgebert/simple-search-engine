@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-* >=JDK 11.0.14
+* \>=JDK 11.0.14
 
 ### Getting started 
 
