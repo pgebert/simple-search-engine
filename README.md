@@ -1,10 +1,12 @@
-# simple-search-engine
+# Simple Search Engine
+  
+ <img src="https://user-images.githubusercontent.com/6838540/166062940-dc5229f9-e57e-4bfa-934e-e09db81d5f50.jpg" >
 
-![image](https://user-images.githubusercontent.com/6838540/165939191-82153509-c2a4-4b7a-9fda-5bf5f52b806c.png)
+### Prerequisites
 
+* \>=JDK 11.0.14
 
 ### Getting started 
-
 
 ```
 ./gradlew build
@@ -13,5 +15,4 @@
 
 ### Demonstration 
 
-
-![simpleSearchEngine](https://user-images.githubusercontent.com/6838540/165939050-facaed3c-47df-4382-8c8a-73cc52480f37.gif)
+<img src="https://user-images.githubusercontent.com/6838540/165939050-facaed3c-47df-4382-8c8a-73cc52480f37.gif" >
