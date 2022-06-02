@@ -2,12 +2,20 @@ package search
 
 import java.io.File
 
+/**
+ * Search strategies
+ *
+ * @constructor Create new search strategy
+ */
 enum class SearchStrategy {
     ALL,
     ANY,
     NONE
 }
 
+/**
+ * Mock data
+ */
 const val mockData = "Kristofer Galley\n" +
         "Fernando Marbury fernando_marbury@gmail.com\n" +
         "Kristyn Nix nix-kris@gmail.com\n" +
@@ -59,7 +67,11 @@ const val mockData = "Kristofer Galley\n" +
         "Erica Radford hisam@gmail.com\n" +
         "Elyse Pauling"
 
-
+/**
+ * Command flow loop and entrypoint.
+ *
+ * @param args command line arguments
+ */
 fun main(args: Array<String>) {
 
     val entries = when {
@@ -80,10 +92,14 @@ fun main(args: Array<String>) {
     }
 
     println("Bye!")
-
-
 }
 
+/**
+ * Read entries from file
+ *
+ * @param file input file
+ * @return list of entries
+ */
 fun readEntriesFromFile(file: File): List<String> {
 
     var entries = emptyList<String>()
@@ -94,9 +110,19 @@ fun readEntriesFromFile(file: File): List<String> {
     return entries
 }
 
+/**
+ * Read entries from string
+ *
+ * @param data list of entries
+ */
 fun readEntriesFromString(data: String) = data.split("\n")
 
-
+/**
+ * Create search index for list of entries
+ *
+ * @param entries list of entries
+ * @return map of word to entry
+ */
 fun createSearchIndex(entries: List<String>): Map<String, MutableList<Int>> {
     val index = mutableMapOf<String, MutableList<Int>>()
 
@@ -111,6 +137,11 @@ fun createSearchIndex(entries: List<String>): Map<String, MutableList<Int>> {
     return index.toMap()
 }
 
+/**
+ * Prints user menu and reads the user input
+ *
+ * @return user input
+ */
 fun readUserMenu(): Int {
 
     while (true) {
@@ -128,6 +159,12 @@ fun readUserMenu(): Int {
 
 }
 
+/**
+ * Find person in entries
+ *
+ * @param index search index
+ * @param entries list of entries
+ */
 fun findPerson(index: Map<String, MutableList<Int>>, entries: List<String>) {
 
     println("Select a matching strategy: ALL, ANY, NONE")
@@ -147,6 +184,11 @@ fun findPerson(index: Map<String, MutableList<Int>>, entries: List<String>) {
     results.forEach { println(it) }
 }
 
+/**
+ * Prints all persons in the entries
+ *
+ * @param entries list of entries
+ */
 fun printAllPersons(entries: List<String>) {
     println("=== List of people ===")
     entries.forEach { println(it) }

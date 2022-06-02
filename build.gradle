@@ -51,10 +51,6 @@ subprojects {
         test.java.srcDir 'test'
     }
 
-    mainClassName = 'search.MainKt'
-
-    run { standardInput = System.in }
-
     test {
         systemProperty "file.encoding", "utf-8"
         outputs.upToDateWhen { false }
@@ -72,7 +68,7 @@ project(':util') {
     }
 }
 
-configure(subprojects.findAll { it.name != 'util' }) {
+configure(subprojects.findAll {it.name != 'util'}) {
     dependencies {
         testImplementation project(':util').sourceSets.main.output
         testImplementation project(':util').sourceSets.test.output
@@ -82,4 +78,3 @@ configure(subprojects.findAll { it.name != 'util' }) {
 wrapper {
     gradleVersion = hs.gradle.version
 }
-
